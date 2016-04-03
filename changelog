@@ -1,4 +1,16 @@
-commit 44d72c8e8b71fa544d27d22f81b4d4711726be8e (HEAD, origin/master, origin/HEAD, master)
+commit 1cdbd78349d16f3529f3320f71e2f2853549ddbf (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sat Apr 2 22:34:07 2016 -0430
+
+    * logo de travis
+
+commit 56fba707466ed092f62aed4317c8496963106347
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sat Apr 2 22:33:32 2016 -0430
+
+    * changelog
+
+commit 44d72c8e8b71fa544d27d22f81b4d4711726be8e
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sat Apr 2 22:32:31 2016 -0430
 
