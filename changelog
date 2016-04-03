@@ -1,4 +1,16 @@
-commit 385035615cbda190de4ba1af002a556384214126 (HEAD, origin/master, origin/HEAD, master)
+commit 44d72c8e8b71fa544d27d22f81b4d4711726be8e (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sat Apr 2 22:32:31 2016 -0430
+
+    * comprobacion de variables vacias
+
+commit aee632f9d77aa873d5f0713cb319fccc02bf1bff
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sat Apr 2 22:26:40 2016 -0430
+
+    * changelog
+
+commit 385035615cbda190de4ba1af002a556384214126
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sat Apr 2 22:26:17 2016 -0430
 
