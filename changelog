@@ -1,4 +1,17 @@
-commit da4043497b2aebc8a5325384a44c122d561d06cc (HEAD, origin/master, origin/HEAD, master)
+commit 59236902b913a11bead08d7746afa11d15593e07 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sat Apr 2 22:42:47 2016 -0430
+
+    * se actualiza el readme
+    * se coloca comprobacion de root
+
+commit fada334d2c2858a1268974d4e1ad82a4f1b45ca6
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sat Apr 2 22:39:43 2016 -0430
+
+    * changelog
+
+commit da4043497b2aebc8a5325384a44c122d561d06cc
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sat Apr 2 22:39:29 2016 -0430
 
