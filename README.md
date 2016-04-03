@@ -5,3 +5,9 @@
 [![Build Status](https://travis-ci.org/sinfallas/securegen.svg?branch=master)](https://travis-ci.org/sinfallas/securegen)
 
 generate a secure gpg key
+
+Uso:
+
+```bash
+./securegen nombre apellido su@correo.com clave
+```

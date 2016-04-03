@@ -3,6 +3,11 @@
 # Licence: GPL-2
 LC_ALL=C
 
+if [[ "$EUID" = "0" ]]; then
+	echo -e "\e[00;31mERROR: No debe ser root.\e[00m"
+	exit 1
+fi
+
 if [[ -z $1 ]]; then
 	echo "USO: ./securegen nombre apellido su@correo.com clave"
 	exit 1
