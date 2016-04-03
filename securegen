@@ -8,6 +8,16 @@ if [[ -z $1 ]]; then
 	exit 1
 fi
 
+if [[ -z $2 ]]; then
+	echo "USO: ./securegen nombre apellido su@correo.com clave"
+	exit 1
+fi
+
+if [[ -z $3 ]]; then
+	echo "USO: ./securegen nombre apellido su@correo.com clave"
+	exit 1
+fi
+
 if ! [[ -f $HOME/.gnupg/gpg.conf.old ]]; then
 	mv -f $HOME/.gnupg/gpg.conf $HOME/.gnupg/gpg.conf.old
 	echo "keyserver hkp://keys.gnupg.net" > $HOME/.gnupg/gpg.conf
