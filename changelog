@@ -1,4 +1,16 @@
-commit 5231cfea501ec4e584ccfb79b540c224a80b8142 (HEAD, origin/master, origin/HEAD, master)
+commit c633502593802edd0871d400b3c71f057a3d0ce7 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Tue Apr 5 13:21:31 2016 -0430
+
+    * se agrega un parametro necesario
+
+commit c91773ef23a21f0d0a34db5ee20b517611e5e6d7
+Author: jose perez <sinfallas@gmail.com>
+Date:   Tue Apr 5 11:42:12 2016 -0430
+
+    * changelog
+
+commit 5231cfea501ec4e584ccfb79b540c224a80b8142
 Author: jose perez <sinfallas@gmail.com>
 Date:   Tue Apr 5 11:42:00 2016 -0430
 
