@@ -1,4 +1,16 @@
-commit c633502593802edd0871d400b3c71f057a3d0ce7 (HEAD, origin/master, origin/HEAD, master)
+commit e63423edf1028a5447a792c5ad8727cd6cbe5782 (HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sun Nov 20 22:38:46 2016 -0400
+
+    * se optimiza el codigo mediante una funcion
+
+commit dd6c0301fbc4baf568ceaf5b98353bbc5a40674c (origin/master, origin/HEAD)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Tue Apr 5 13:21:51 2016 -0430
+
+    * changelog
+
+commit c633502593802edd0871d400b3c71f057a3d0ce7
 Author: jose perez <sinfallas@gmail.com>
 Date:   Tue Apr 5 13:21:31 2016 -0430
 
