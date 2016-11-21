@@ -2,6 +2,10 @@
 # Made by Jesus Palencia
 # Licence: GPL-2
 LC_ALL=C
+function mensaje (){
+	echo "USO: ./securegen nombre apellido su@correo.com clave"
+	exit 1
+}
 
 if [[ "$EUID" = "0" ]]; then
 	echo -e "\e[00;31mERROR: No debe ser root.\e[00m"
@@ -9,18 +13,15 @@ if [[ "$EUID" = "0" ]]; then
 fi
 
 if [[ -z $1 ]]; then
-	echo "USO: ./securegen nombre apellido su@correo.com clave"
-	exit 1
+	mensaje	
 fi
 
 if [[ -z $2 ]]; then
-	echo "USO: ./securegen nombre apellido su@correo.com clave"
-	exit 1
+	mensaje
 fi
 
 if [[ -z $3 ]]; then
-	echo "USO: ./securegen nombre apellido su@correo.com clave"
-	exit 1
+	mensaje
 fi
 
 if ! [[ -f $HOME/.gnupg/gpg.conf.old ]]; then
@@ -58,6 +59,5 @@ gpg --keyserver keys.fedoraproject.org --send-keys $millave
 gpg --keyserver pgp.uni-mainz.de --send-keys $millave
 rm -f /tmp/genkey
 rm -f /tmp/listo
-
 echo "Finalizado..."
 exit 0
