@@ -4,7 +4,6 @@
 [![DOI](https://zenodo.org/badge/4102/sinfallas/securegen.svg)](https://zenodo.org/badge/latestdoi/4102/sinfallas/securegen)
 [![Build Status](https://travis-ci.org/sinfallas/securegen.svg?branch=master)](https://travis-ci.org/sinfallas/securegen)
 
-generate a secure gpg key
 
 Uso:
 
