@@ -1,4 +1,28 @@
-commit 712521bc29ab59c042f0715067c9810bcbccf894 (HEAD, origin/master, origin/HEAD, master)
+commit a58cd18bb3a7b36724aee6554f09f5f486f7d0a1 (HEAD, origin/master, origin/HEAD, master)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Wed Jul 12 15:54:03 2017 -0400
+
+    * se agrega la funcion del pid
+
+commit edfb398d7936b6b6f800781e222a4dc570da97af
+Author: Jose Perez <sinfallas@users.noreply.github.com>
+Date:   Sat Feb 11 10:48:55 2017 -0400
+
+    Update README.md
+
+commit 7b78bd78c6843415cac90a0f2d0c1d32e538a659
+Author: Jose Perez <sinfallas@users.noreply.github.com>
+Date:   Sat Feb 11 10:44:06 2017 -0400
+
+    Update README.md
+
+commit 735812e1ecaa713ec38ddc840eb2b854457a8991
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sun Nov 20 22:39:37 2016 -0400
+
+    * changelog
+
+commit 712521bc29ab59c042f0715067c9810bcbccf894
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sun Nov 20 22:39:07 2016 -0400
 
