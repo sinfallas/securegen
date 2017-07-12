@@ -2,6 +2,9 @@
 # Made by Jesus Palencia
 # Licence: GPL-2
 LC_ALL=C
+trap "rm -f /run/$(basename $0).pid; exit" 0 1 2 3 15
+echo "$BASHPID" > /run/$(basename $0).pid
+
 function mensaje (){
 	echo "USO: ./securegen nombre apellido su@correo.com clave"
 	exit 1
@@ -60,4 +63,5 @@ gpg --keyserver pgp.uni-mainz.de --send-keys $millave
 rm -f /tmp/genkey
 rm -f /tmp/listo
 echo "Finalizado..."
+rm -f /run/$(basename $0).pid
 exit 0
