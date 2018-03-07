@@ -2,9 +2,10 @@
 # Made by Jesus Palencia
 # Licence: GPL-2
 LC_ALL=C
-trap "rm -f /run/$(basename $0).pid; exit" 0 1 2 3 15
-echo "$BASHPID" > /run/$(basename $0).pid
+key="$HOME/genkey"
+listo="$HOME/listo"
 
+rm -f $key
 function mensaje (){
 	echo "USO: ./securegen nombre apellido su@correo.com clave"
 	exit 1
@@ -54,16 +55,16 @@ if ! [[ -f $HOME/.gnupg/gpg.conf.old ]]; then
 	echo "keyserver-options no-honor-keyserver-url" >> $HOME/.gnupg/gpg.conf
 fi
 
-echo 'Key-Type: 1' > /tmp/genkey
-echo 'Key-Length: 4096' >> /tmp/genkey
-echo 'Subkey-Type: 1' >> /tmp/genkey
-echo 'Subkey-Length: 4096' >> /tmp/genkey
-echo 'Name-Real:' $1 $2 >> /tmp/genkey
-echo 'Name-Email:' $3 >> /tmp/genkey
-echo 'Expire-Date: 2y' >> /tmp/genkey
-echo 'Passphrase:' $4 >> /tmp/genkey
-script -q /dev/stdout -c 'gpg --batch --gen-key /tmp/genkey' | tee /tmp/listo
-millave=$(cat /tmp/listo | grep "gpg: clave" | uniq | awk '{print $3}')
+echo 'Key-Type: 1' > $key
+echo 'Key-Length: 4096' >> $key
+echo 'Subkey-Type: 1' >> $key
+echo 'Subkey-Length: 4096' >> $key
+echo 'Name-Real:' $1 $2 >> $key
+echo 'Name-Email:' $3 >> $key
+echo 'Expire-Date: 2y' >> $key
+echo 'Passphrase:' $4 >> $key
+script -q /dev/stdout -c 'gpg --batch --gen-key $key' | tee "$listo"
+millave=$(cat "$listo" | grep "gpg: clave" | uniq | awk '{print $3}')
 echo "Llave generada $millave"
 gpg --keyserver pgp.mit.edu --send-keys $millave
 gpg --keyserver pool.sks-keyservers.net --send-keys $millave
@@ -71,8 +72,7 @@ gpg --keyserver keyring.debian.org --send-key $millave
 gpg --keyserver keyserver.ubuntu.com --send-keys $millave
 gpg --keyserver keys.fedoraproject.org --send-keys $millave
 gpg --keyserver pgp.uni-mainz.de --send-keys $millave
-rm -f /tmp/genkey
-rm -f /tmp/listo
+rm -f $key
+rm -f "$listo"
 echo "Finalizado..."
-rm -f /run/$(basename $0).pid
 exit 0
