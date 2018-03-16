@@ -1,4 +1,22 @@
-commit 29554067f6c293e88d56494358181e300434e1e9 (HEAD, origin/master, origin/HEAD, master)
+commit 75996a315f8e67debd4f2fc84c5c553ac1c576b1 (HEAD -> master, origin/master, origin/HEAD)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Thu Mar 15 21:07:44 2018 -0400
+
+    * se llama securegnupg
+
+commit 27e9acdba1ff9b172ff352360117e5998cedc984 (tag: v0.2.1)
+Author: Jose Perez <sinfallas@users.noreply.github.com>
+Date:   Wed Mar 7 08:25:58 2018 -0400
+
+    Update securegen
+
+commit 1e3680f3fdd01483ede32eb1c6b0fd267a4ff6b8
+Author: jose perez <sinfallas@gmail.com>
+Date:   Sun Nov 26 13:40:17 2017 -0400
+
+    * changelog
+
+commit 29554067f6c293e88d56494358181e300434e1e9
 Author: jose perez <sinfallas@gmail.com>
 Date:   Sun Nov 26 13:39:59 2017 -0400
 
